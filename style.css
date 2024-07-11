@@ -1,0 +1,366 @@
+* {
+  /* general values set all values to zero*/
+  margin: 0;
+  padding: 0;
+}
+
+/*Format to header and its children */
+header {
+  background-color: black;
+  display: flex;
+  padding: 32px;
+  justify-content: center;
+}
+/* Format to links links: home, resume, projects, contact */
+a {
+  color: white;
+  font-size: 30px;
+}
+a:hover{
+  color:rgb(78, 115, 129);
+}
+/* format of college link */
+#collegeLink {
+  font-size: 16px;
+}
+/* give some space to items in nav bar  */
+nav {
+  display: flex;
+  gap: 15px;
+  margin-left: 50px;
+}
+
+
+/* Footer align to the center */
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+/* Images in Home and Project fit within the flex container*/
+img {
+  max-width: 88%;
+  height: auto;
+}
+
+/* INDEX PAGE*/
+
+/* Wrap for index */
+#textWrap {
+text-wrap:pretty;
+text-align: justify;
+width: 400px;
+
+}
+/* TItle index size */
+#titleIndex{
+font-size: 50px;
+
+}
+/* Index photo */
+#indexPhoto{
+width: 50%;
+}
+
+
+.hightlight {
+  color: rgb(66, 179, 113);
+}
+
+/* Giving format to the main in the index page */
+#containerIndex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+  background-color: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 90vh;
+}
+
+
+
+#containerimg{
+  display:flex;
+  justify-content: center;
+}
+
+/*RESUME PAGE*/
+
+/* Personal information set up */
+#personalInfo {
+  display: flex;
+  justify-content: center;
+  
+}
+#personalInfo p{
+  font-size: 26px;
+  
+}
+
+#personalInfo div{
+display: flex;
+flex-direction: column;
+/* change orianetation of flex, then change to justify */
+justify-content: center;
+}
+
+.banner img {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.imageContainer{
+  display: flex;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; 
+}
+
+/* Similarly as the container in index, this id give format to the main in Resume page */
+#containerResume {
+  padding: 100px;
+  gap: 50px;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+  min-height: 100vh;
+}
+#buttons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+
+#buttons a {
+  background-color: gray;
+  border-radius: 10px; /* Rounded border */
+  text-decoration: none;
+  font-size: 1.5em;
+  padding: 1em 2em;
+  text-decoration: none;
+  color: white;
+}
+
+#buttons a:hover{
+  background-color: rgb(66, 179, 113);
+}
+
+/*Go to main button*/
+.goMain a {
+  background-color: gray;
+  border-radius: 10px; /* Rounded border */
+  font-size: 1em;
+  padding: 1em 2em;
+  text-decoration: none;
+  color: white;
+}
+.goMain a:hover{
+  background-color: rgb(66, 179, 113);
+  border-radius: 10px; /* Rounded border */
+  
+}
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  font-size: 18px;
+}
+
+/*Giving format to button in Personal-Information that returs to main*/
+#Personal-Information {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#Summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#Work-Experience {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#Skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#Education {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.goMain {
+  margin: auto;
+}
+/*PROJETCS PAGE*/
+
+
+/* Giving format to the container of the projects */
+.slideshow-projects {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.imageProject {
+  width: 200%;
+  text-align: center;
+}
+
+.summaryImage {
+  width: 100%;
+  text-align: center;
+}
+
+.mainProjects {
+  background-color: black;
+  color: white;
+}
+
+h2 {
+  color: rgb(22, 188, 58);
+  font-size: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.headingCentered {
+  text-align: center;
+}
+
+h3 {
+  color: rgb(110, 182, 110);
+  font-size: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+ul.centered {
+  text-align: center; /* Center text inside the <ul> */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+ul.centered li {
+  list-style-type: none; /* Remove default list item bullets */
+  margin: 5px 0; /* Adjust margin between list items */
+}
+
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute; /* allows to use with top and left */
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  margin-left: -60px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: grey;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  margin-right: -30px;
+}
+
+.mySlides {
+  display: none;
+}
+
+/*display flex for slides*/
+.slideFlex {
+  display: flex;
+  align-items: center;
+  min-height: 88vh;
+}
+
+
+.imgCentered {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 40vh;
+}
+#imgSummary {
+  max-width: 100%; /* Ensure image does not exceed container width */
+  max-height: 100%; /* Ensure image does not exceed container height */
+}
+#imgWork {
+  max-width: 100%; /* Ensure image does not exceed container width */
+  max-height: 100%;
+  /* Ensure image does not exceed container height */
+}
+
+/*CONTACT PAGE*/
+
+/*Contact main style*/
+
+#contactMain {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+form div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#name{
+
+    height: 25px;
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
+}
+#email{
+  height: 50px;
+  border-radius: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
+}
+#message{
+  
+  border-radius: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: medium;
+}
+
+.formFont{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: larger;
+}
